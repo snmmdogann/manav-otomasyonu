@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1273</width>
+    <height>1314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(255, 251, 166);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btnCikis">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>740</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);</string>
+    </property>
+    <property name="text">
+     <string>ÇIKIŞ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSebzeEkle">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>400</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);</string>
+    </property>
+    <property name="text">
+     <string>SEBZE EKLE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMeyveSil">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>400</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);</string>
+    </property>
+    <property name="text">
+     <string>MEYVE SIL</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="twmeyvelistesi">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>470</y>
+      <width>601</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 168, 150);</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>80</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>4</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>4</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="btnGuncelle">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>740</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);</string>
+    </property>
+    <property name="text">
+     <string>MEYVE GÜNCELLE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSebzesil">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>400</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);</string>
+    </property>
+    <property name="text">
+     <string>SEBZE SIL</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="twsebzelistesi">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>470</y>
+      <width>561</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 168, 150);</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>80</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>4</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>4</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="btnMeyveEkle">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);</string>
+    </property>
+    <property name="text">
+     <string>MEYVE EKLE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSebzeGuncelle">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>740</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);</string>
+    </property>
+    <property name="text">
+     <string>SEBZE GÜNCELLE</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>591</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mistral</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 251, 212);</string>
+    </property>
+    <property name="title">
+     <string>MEYVE BİLGİLERİ</string>
+    </property>
+    <widget class="QWidget" name="formLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>521</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>MEYVE CINSI :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>MEYVE ADEDI :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lneMeyveAdedi">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(242, 191, 255);
+background-color: rgb(230, 220, 237);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>MEYVE KILOSU :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="spnMeyvesKilo">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(230, 220, 237);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>MEYVE MENŞEI :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="cmbMeyveMensei">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(230, 220, 237);</string>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Yerli</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>İthal</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">
+font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>MEYVE FIYATI :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lneMeyveFiyat">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(230, 220, 237);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QListWidget" name="lwMeyveCinsi">
+        <property name="font">
+         <font>
+          <family>Rockwell Condensed</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #EEFFBF</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Muz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Çilek</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Karpuz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Kavun</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Erik</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Kiraz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Vişne</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Üzüm</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Elma</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Armut</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ananas</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mango</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Böğürtlen</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Yenidünya</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Şeftali</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Nektari</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Yaban mersini</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>10</y>
+      <width>581</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mistral</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 251, 212);</string>
+    </property>
+    <property name="title">
+     <string>SEBZE BİLGİLERİ</string>
+    </property>
+    <widget class="QWidget" name="formLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>531</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_2">
+      <item row="0" column="1">
+       <widget class="QListWidget" name="lwSebzeCinsi">
+        <property name="font">
+         <font>
+          <family>Rockwell Condensed</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(238, 255, 191);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Patates</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Soğan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Marul</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Maydanoz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Kereviz</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Nane</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dereotu</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Fasulye</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Kabak</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Patlıcan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Domates</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Biber</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mısır</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ispanak</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Brokoli</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bamya</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bezelye</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Barbunya</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Havuç</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>SEBZE ADEDI :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lneSebzeAdedi">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(230, 220, 237);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>SEBZE KILOSU :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSpinBox" name="spnSebzeKilo">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(230, 220, 237);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>SEBZE MENŞEI :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="cmbSebzeMensei">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(230, 220, 237);</string>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Yerli</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>İthal</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>SEBZE FIYATI :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lneSebzeFiyat">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(230, 220, 237);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;</string>
+        </property>
+        <property name="text">
+         <string>SEBZE CINSI :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(255, 251, 166);
+</string>
+        </property>
+        <property name="title">
+         <string>HAKKINDA</string>
+        </property>
+        <widget class="QWidget" name="verticalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>250</y>
+           <width>1051</width>
+           <height>161</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLineEdit" name="lineEdit">
+            <property name="styleSheet">
+             <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);
+</string>
+            </property>
+            <property name="text">
+             <string>ÖZELLIKLER</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(234, 255, 221);
+font: 63 8pt &quot;Bahnschrift SemiBold&quot;;
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(230, 220, 237);
+
+</string>
+            </property>
+            <property name="text">
+             <string>Meyve ve sebzelerin stok yönetimi
+Yeni meyve ve sebze kaydı ekleme, güncelleme, silme
+Meyve ve sebzeleri türlerine, adetlerine ve menşe bilgilerine göre arama yapabilme
+Veritabanı ile güvenli veri saklama</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="verticalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>80</y>
+           <width>1051</width>
+           <height>173</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_2">
+            <property name="styleSheet">
+             <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);</string>
+            </property>
+            <property name="text">
+             <string>HAKKINDA</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_12">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(234, 255, 221);
+font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+font: 63 8pt &quot;Bahnschrift SemiBold&quot;;
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(230, 220, 237);</string>
+            </property>
+            <property name="text">
+             <string>Bu uygulama, meyve ve sebzelerin stok yönetimini sağlayan bir depo yönetim uygulamasıdır.
+ Kullanıcılar, meyve ve sebzelerin türlerini, adetlerini, fiyatlarını ve menşe bilgilerini kaydedebilir, güncelleyebilir, arayabilir ve silebilirler. 
+ Ayrıca, meyve ve sebzeleri türlerine, adetlerine ve menşe bilgilerine göre arama yapabilirler.
+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(234, 255, 221);
+font: 63 8pt &quot;Bahnschrift SemiBold&quot;;
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(230, 220, 237);
+</string>
+            </property>
+            <property name="text">
+             <string>Bu uygulama, PyQt5 kütüphanesi kullanılarak Python programlama dili ile geliştirilmiştir.
+ Arayüz tasarımı için Qt Designer kullanılmış, veritabanı işlemleri için SQLite kullanılmıştır.</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnMeyveAra">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>400</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);</string>
+    </property>
+    <property name="text">
+     <string>MEYVE ARA</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSebzeAra">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>400</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);</string>
+    </property>
+    <property name="text">
+     <string>SEBZE ARA</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1273</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuYard_m">
+    <property name="title">
+     <string>Yardım</string>
+    </property>
+    <addaction name="actionHakk_nda"/>
+   </widget>
+   <addaction name="menuYard_m"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionHakk_nda">
+   <property name="text">
+    <string>Hakkında</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

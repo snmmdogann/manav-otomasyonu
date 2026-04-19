@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>483</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1201</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(255, 251, 166);
+</string>
+    </property>
+    <property name="title">
+     <string>HAKKINDA</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>250</y>
+       <width>1051</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);
+</string>
+        </property>
+        <property name="text">
+         <string>ÖZELLIKLER</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(234, 255, 221);
+font: 63 8pt &quot;Bahnschrift SemiBold&quot;;
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(230, 220, 237);
+
+</string>
+        </property>
+        <property name="text">
+         <string>Meyve ve sebzelerin stok yönetimi
+Yeni meyve ve sebze kaydı ekleme, güncelleme, silme
+Meyve ve sebzeleri türlerine, adetlerine ve menşe bilgilerine göre arama yapabilme
+Veritabanı ile güvenli veri saklama</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>80</y>
+       <width>1051</width>
+       <height>173</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Gill Sans Ultra Bold&quot;;
+background-color: rgb(194, 255, 135);</string>
+        </property>
+        <property name="text">
+         <string>HAKKINDA</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(234, 255, 221);
+font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+font: 63 8pt &quot;Bahnschrift SemiBold&quot;;
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(230, 220, 237);</string>
+        </property>
+        <property name="text">
+         <string>Bu uygulama, meyve ve sebzelerin stok yönetimini sağlayan bir depo yönetim uygulamasıdır.
+ Kullanıcılar, meyve ve sebzelerin türlerini, adetlerini, fiyatlarını ve menşe bilgilerini kaydedebilir, güncelleyebilir, arayabilir ve silebilirler. 
+ Ayrıca, meyve ve sebzeleri türlerine, adetlerine ve menşe bilgilerine göre arama yapabilirler.
+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(234, 255, 221);
+font: 63 8pt &quot;Bahnschrift SemiBold&quot;;
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(230, 220, 237);
+</string>
+        </property>
+        <property name="text">
+         <string>Bu uygulama, PyQt5 kütüphanesi kullanılarak Python programlama dili ile geliştirilmiştir.
+ Arayüz tasarımı için Qt Designer kullanılmış, veritabanı işlemleri için SQLite kullanılmıştır.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
